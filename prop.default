@@ -17,9 +17,9 @@ ro.system.build.id=SP2A.220405.004
 ro.system.build.tags=test-keys
 ro.system.build.type=eng
 ro.system.build.version.incremental=eng.root.20240915.055406
-ro.system.build.version.release=12
+ro.system.build.version.release=14
 ro.system.build.version.release_or_codename=16.1.0
-ro.system.build.version.sdk=32
+ro.system.build.version.sdk=34
 ####################################
 # from out/target/product/fogona/obj/PACKAGING/system_build_prop_intermediates/buildinfo.prop
 ####################################
@@ -28,16 +28,16 @@ ro.system.build.version.sdk=32
 ro.build.id=SP2A.220405.004
 ro.build.display.id=twrp_fogona-eng 16.1.0 SP2A.220405.004 eng.root.20240915.055406 test-keys
 ro.build.version.incremental=eng.root.20240915.055406
-ro.build.version.sdk=32
+ro.build.version.sdk=34
 ro.build.version.preview_sdk=0
 ro.build.version.preview_sdk_fingerprint=REL
 ro.build.version.codename=REL
 ro.build.version.all_codenames=REL
-ro.build.version.release=12
+ro.build.version.release=14
 ro.build.version.release_or_codename=16.1.0
 ro.build.version.security_patch=2099-12-31
 ro.build.version.base_os=
-ro.build.version.min_supported_target_sdk=23
+ro.build.version.min_supported_target_sdk=28
 ro.build.date=Sun Sep 15 05:50:08 CEST 2024
 ro.build.date.utc=1726372208
 ro.build.type=eng
@@ -47,9 +47,9 @@ ro.build.tags=test-keys
 ro.build.flavor=twrp_fogona-eng
 # ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
 # use ro.product.cpu.abilist instead.
-ro.product.cpu.abi=arm64-v8a
-ro.product.locale=en-US
-ro.wifi.channels=
+ro.product.cpu.abi=arm64-v8a,armv7-el
+ro.product.locale=en-US_UTF.8
+ro.wifi.channels=32
 # ro.build.product is obsolete; use ro.product.device
 ro.build.product=fogona
 # Do not try to parse description or thumbprint
@@ -59,19 +59,19 @@ ro.build.description=fogona-user 13 T3TF33.66-37 2be5e5 release-keys
 # from device/motorola/fogona/system.prop
 ####################################
 ro.sys.usb.bicr=no
-ro.sys.usb.storage.type=adb,mtp
+ro.sys.usb.storage.type=adb,mtp,diag,p2p,
 persist.service.adb.enable=1
 persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
 ####################################
 # from variable ADDITIONAL_SYSTEM_PROPERTIES
 ####################################
-ro.build.selinux=1
-persist.sys.disable_rescue=true
-ro.treble.enabled=false
+ro.build.selinux=PERMISSIVE
+persist.sys.disable_rescue=false
+ro.treble.enabled=true
 ro.actionable_compatible_property.enabled=true
 persist.debug.dalvik.vm.core_platform_api_policy=just-warn
-ro.postinstall.fstab.prefix=/system
+ro.postinstall.fstab.prefix=/system/etc
 ro.kernel.android.checkjni=1
 ro.secure=0
 ro.allow.mock.location=1
@@ -82,7 +82,7 @@ net.bt.name=Android
 ####################################
 # from variable PRODUCT_SYSTEM_PROPERTIES
 ####################################
-debug.atrace.tags.enableflags=0
+debug.atrace.tags.enableflags=1
 persist.traced.enable=1
 dalvik.vm.image-dex2oat-Xms=64m
 dalvik.vm.image-dex2oat-Xmx=64m
@@ -124,7 +124,7 @@ dalvik.vm.madvise.artfile.size=4294967295
 # from variable ADDITIONAL_VENDOR_PROPERTIES
 ####################################
 ro.bionic.arch=arm64
-ro.bionic.cpu_variant=generic
+ro.bionic.cpu_variant=armv8a
 ro.bionic.2nd_arch=arm
 ro.bionic.2nd_cpu_variant=cortex-a9
 persist.sys.dalvik.vm.lib.2=libart.so
@@ -137,7 +137,7 @@ ro.minui.pixel_format=RGBX_8888
 ro.vendor.build.security_patch=2099-12-31
 ro.product.board=fogona
 ro.board.platform=bengal
-ro.hwui.use_vulkan=
+ro.hwui.use_vulkan=1
 ro.sf.lcd_density=280
 ro.build.ab_update=true
 ####################################
@@ -154,7 +154,7 @@ ro.config.ringtone=Ring_Synth_04.ogg
 tombstoned.max_tombstone_count=50
 ro.logd.size.stats=64K
 log.tag.stats_log=I
-ro.carrier=unknown
+ro.carrier=retail
 ro.config.notification_sound=OnTheHunt.ogg
 ro.config.alarm_alert=Alarm_Classic.ogg
 # end of file
@@ -209,9 +209,9 @@ ro.odm.build.id=SP2A.220405.004
 ro.odm.build.tags=test-keys
 ro.odm.build.type=eng
 ro.odm.build.version.incremental=eng.root.20240915.055406
-ro.odm.build.version.release=12
+ro.odm.build.version.release=14
 ro.odm.build.version.release_or_codename=16.1.0
-ro.odm.build.version.sdk=32
+ro.odm.build.version.sdk=34
 ####################################
 # from variable ADDITIONAL_ODM_PROPERTIES
 ####################################
@@ -237,9 +237,9 @@ ro.product.build.id=SP2A.220405.004
 ro.product.build.tags=test-keys
 ro.product.build.type=eng
 ro.product.build.version.incremental=eng.root.20240915.055406
-ro.product.build.version.release=12
+ro.product.build.version.release=14
 ro.product.build.version.release_or_codename=16.1.0
-ro.product.build.version.sdk=32
+ro.product.build.version.sdk=34
 ####################################
 # from variable ADDITIONAL_PRODUCT_PROPERTIES
 ####################################
